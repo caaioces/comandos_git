@@ -71,3 +71,4 @@ Dicas adicionais:
 É uma boa prática puxar regularmente as alterações da branch principal para sua branch local para manter seu trabalho atualizado e minimizar conflitos no futuro.
 Certifique-se de comunicar quaisquer alterações significativas que você fez na sua branch teste1 para garantir que todas as partes interessadas estejam cientes.
 Seguindo esses passos, você conseguirá puxar as alterações da branch principal para sua branch teste1 no Git.
+teste
