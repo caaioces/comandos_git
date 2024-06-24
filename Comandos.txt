@@ -10,8 +10,64 @@ git status -> verifica quais arquivos pendentes para commit
 
 git add . -> adiciona todos os arquivos modificados
 
+git commit -m 'descricao do commit' -> envia o commit com a descricao
+
+git push origin sua-branch -> envia o rep local para a branch remota
 
 
 
 
+Se o nome da sua branch é teste1, os passos para puxar as alterações da branch principal (por exemplo, main) para a sua branch teste1 são os seguintes:
 
+Passo 1: Verificar o status atual da sua branch
+Antes de começar, verifique o status da sua branch local para garantir que você não tenha alterações não commitadas. Use o comando:
+
+bash
+Copiar código
+git status
+Certifique-se de que sua branch atual está limpa (sem alterações não commitadas).
+
+Passo 2: Trocar para a branch principal
+Troque para a branch principal do seu repositório usando:
+
+bash
+Copiar código
+git checkout main
+Substitua main pelo nome da branch principal do seu projeto, se necessário (master em alguns projetos mais antigos).
+
+Passo 3: Puxar as alterações da branch principal
+Puxe as alterações da branch principal para a sua branch local teste1 usando o comando git pull:
+
+bash
+Copiar código
+git pull origin main
+Isso irá buscar todas as alterações da branch main do repositório remoto (assumindo que origin seja o nome do seu repositório remoto) e integrá-las na sua branch local teste1.
+
+Passo 4: Trocar de volta para sua branch
+Depois de puxar as alterações, você pode voltar para a sua branch teste1 usando:
+
+bash
+Copiar código
+git checkout teste1
+Passo 5: Atualizar sua branch com as alterações (opcional)
+Se desejar aplicar suas alterações locais no topo das alterações que você acabou de puxar da main, você pode rebase sua branch teste1 na branch main:
+
+bash
+Copiar código
+git rebase main
+Isso aplica seus commits locais no topo das alterações da branch main, mantendo um histórico de commits linear e mais limpo. Lembre-se de resolver quaisquer conflitos que possam surgir durante o rebase.
+
+Passo 6: Resolver conflitos (se houver)
+Se ocorrerem conflitos durante o git pull ou git rebase, você precisará resolvê-los manualmente. O Git irá guiá-lo através do processo para resolver esses conflitos.
+
+Passo 7: Commit (se necessário) e continuar seu trabalho
+Depois de integrar as alterações da branch principal na sua branch teste1, você pode commitar as alterações, se necessário, e continuar trabalhando na sua branch:
+
+bash
+Copiar código
+git add .
+git commit -m "Mensagem do commit"
+Dicas adicionais:
+É uma boa prática puxar regularmente as alterações da branch principal para sua branch local para manter seu trabalho atualizado e minimizar conflitos no futuro.
+Certifique-se de comunicar quaisquer alterações significativas que você fez na sua branch teste1 para garantir que todas as partes interessadas estejam cientes.
+Seguindo esses passos, você conseguirá puxar as alterações da branch principal para sua branch teste1 no Git.
