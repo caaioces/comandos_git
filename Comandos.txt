@@ -1,0 +1,17 @@
+git init -> inicia o repositório git localmente
+
+git clone https://github.com/caaioces/comandos_git.git -> Clona o repositório do github
+
+git branch nome-da-branch -> cria uma nova branch
+
+git checkout nome-da-branch -> muda para outra branch
+
+git status -> verifica quais arquivos pendentes para commit
+
+git add . -> adiciona todos os arquivos modificados
+
+
+
+
+
+
