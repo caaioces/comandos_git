@@ -15,3 +15,28 @@ git add . -> adiciona todos os arquivos modificados
 git commit -m 'descricao do commit' -> envia o commit com a descricao
 
 git push origin sua-branch -> envia o rep local para a branch remota
+
+# MERGE da branch DEVELOP para a MAIN usando gitbash no windows
+
+1 - Atualizar a branch develop local:
+
+git checkout develop
+
+git pull origin main
+
+2 - Vá para a branch MAIN e atualize-a também
+
+git checkout main
+
+git pull origin main
+
+3 - Faça o merge da develop na main
+
+git merge develop
+
+git add .
+git commit
+
+4 - Envie a main atualizada para o repositório remoto
+
+git push origin main
